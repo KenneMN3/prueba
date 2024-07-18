@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciar Sesion | Sistema de Gestion de Empleados</title>
+	<link rel="stylesheet" type="text/css" href="stylelogin.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Sistema de Gestion de Empleados</h1>
+			<ul id="navli">
+				<li><a class="homeblack" href="index.html">INICIO</a></li>
+				<li><a class="homeblack" href="elogin.html">Inicio de Sesion de Empleado</a></li>
+				<li><a class="homered" href="alogin.html">Inicio de Sesion del Administrador</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="divider"></div>
+
+	<div class="loginbox">
+    <img src="assets/admin.png" class="avatar">
+        <h1>Inicia Sesion Aqui</h1>
+        <form action="process/aprocess.php" method="POST">
+            <p>Correo Electronico</p>
+            <input type="text" name="mailuid" placeholder="Ingresa tu dirección de correo electrónico" required="required">
+            <p>Contraseña</p>
+            <input type="password" name="pwd" placeholder="Ingresa tu contraseña" required="required">
+            <input type="submit" name="login-submit" value="Iniciar Sesión">
+        </form>
+    </div>
+</body>
+</html>
